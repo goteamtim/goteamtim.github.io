@@ -1,0 +1,79 @@
+
+
+#home {
+  background: url(../img/home.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 35em;
+  /*font-family: 'Poiret One', cursive;*/
+}
+
+/* vert-centered text */
+.text-vertcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vertcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#about{
+	background: url(../img/about.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 25em;
+}
+
+#portfolio {
+	background: url(../img/portfolio.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 25em;
+}
+
+projects div{
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+}
+
+.top-project {
+	height:200px;
+	width: 300px;
+	border: 4px solid black;
+}
+
+.bottom-project {
+	height: 100px;
+	width:300px;
+	border: 1px dotted black;
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient( black,grey); /* Safari */
+  background: -o-radial-gradient(grey, black); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient( grey,black); /* Firefox 3.6 to 15 */
+  background: radial-gradient(grey, black); /* Standard syntax */
+}
+
+.bottom-project p{
+	color: white;
+  text-align: center;
+  vertical-align: middle;
+}
