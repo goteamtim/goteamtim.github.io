@@ -1,7 +1,7 @@
 
 
 #home {
-  background: url(../img/home.jpg) no-repeat center center fixed;
+
   display: table;
   height: 100%;
   position: relative;
@@ -11,7 +11,7 @@
   -o-background-size: cover;
   background-size: cover;
   padding-top: 10%;
-  padding-bottom: 35em;
+  padding-bottom: 25em;
   /*font-family: 'Poiret One', cursive;*/
 }
 
@@ -79,6 +79,11 @@ margin-right: auto;
 float: none !important;
 }
 
+.top-project img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .bottom-project {
 	height: 100px;
 	width:300px;
@@ -113,3 +118,8 @@ top: -5px;
   padding-top:20px;
   background-color: #f8f8f8;
 } 
+
+h1, h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
