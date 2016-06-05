@@ -123,3 +123,42 @@ h1, h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
 }
+
+#currentTime {
+    font-size: 222px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+}
+
+#content {
+    padding-top: 300px;
+    
+}
+
+body {
+    background-color: #2F2F4F;
+}
+
+#weatherContent {
+    font-size: 62px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+
+.unitSelect {
+  cursor: pointer;
+}
