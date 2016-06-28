@@ -46,7 +46,7 @@ function loadWeatherData(){
             document.querySelector("#currentTemp").innerHTML = Math.round(json["main"].temp);
             document.querySelector("#range").innerHTML = Math.round(json.main.temp_min) + " - " + Math.round(json.main.temp_max);
             document.querySelector(".owf").classList.add("owf-" + json.weather[0].id);
-            document.querySelector("#loadingText").style.visibility = "hidden";
+            document.querySelector("#loadingText").remove();
             document.querySelector("#weatherContent").style.visibility = "visible";
             
             
