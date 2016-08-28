@@ -12,16 +12,25 @@ function searchWikipedia(searchTerm, callback)
 
 function displayResults(responseText){
 	//cycle through each result and add it to the page
-    console.log(responseText)
-    responseText["1"].forEach(function(element) {
+    console.log(typeof(responseText))
+    responseText["1"].forEach(function(element,index) {
         var wikiItem = document.createElement("LI");
-        wikiItem.innerHTML = element;
+        wikiItem.className = "wikiResultItem";
+        var itemUrl = document.createElement("a");
+        var itemDesc = document.createElement("p");
+        itemDesc.innerHTML = responseText["2"][index].substring(0,200);
+        itemUrl.innerHTML = element;
+        itemUrl.href = responseText["3"][index];
+        itemUrl.style.display = "block";
+        itemUrl.style.width = "100%";
+        itemUrl.style.height = "100%";
+        wikiItem.appendChild(itemUrl);
+        wikiItem.appendChild(itemDesc);
         resultsList.appendChild(wikiItem)
         //Build new element ul
-        //add title[1]
+        //add title [1]
         //add some description [2]
-        //add url to article[3]
-
+        //add url to article [3]
     }, this);
 }
 

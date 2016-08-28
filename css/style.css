@@ -152,6 +152,13 @@ h1, h2 {
   background-color: royalblue;
 }
 
+.wikiResultItem{
+  width: 85%;
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  list-style: none;
+}
 
 #weatherContent {
     font-size: 62px;
