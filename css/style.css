@@ -142,6 +142,17 @@ h1, h2 {
     background-color: firebrick;
 }
 
+.wiki-body {
+  background-color: royalblue;
+}
+
+#wiki-search-box {
+  border-radius: 50px;
+  border-color: orangered;
+  background-color: royalblue;
+}
+
+
 #weatherContent {
     font-size: 62px;
     color: white;
