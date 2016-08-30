@@ -7,7 +7,7 @@ var wikiApiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&prop=revi
 function searchWikipedia(searchTerm, callback)
 {
 	var url = wikiApiUrl + encodeURIComponent(searchTerm);
-    $.getJSON(url,displayResults);
+    $.getJSON(url,callback);
 }
 
 function displayResults(responseText){
