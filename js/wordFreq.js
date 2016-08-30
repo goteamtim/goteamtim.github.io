@@ -3,13 +3,14 @@ let wordObject = {};
 function calculateFrequency(){
     document.getElementById("finalList").innerText = '';
     var wordSet = document.getElementById("enteredText").value;
-    var array1 = wordSet.split(' ');
-    console.log(array1[2])
-    for (var i = 0; i < array1.length; i++) {
-        if(!wordObject.hasOwnProperty(array1[i])){
-            wordObject[array1[i]] = 1;
+    //Sanitize wordset here  escape newline tab etc.
+    var wordSetArray = wordSet.split(' ');
+    console.log(wordSetArray[2])
+    for (var i = 0; i < wordSetArray.length; i++) {
+        if(!wordObject.hasOwnProperty(wordSetArray[i])){
+            wordObject[wordSetArray[i]] = 1;
         }else{
-            wordObject[array1[i]] += 1;
+            wordObject[wordSetArray[i]] += 1;
         }
     }
     document.getElementById("finalList").innerText = JSON.stringify(wordObject);
