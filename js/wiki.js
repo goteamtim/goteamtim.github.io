@@ -12,26 +12,32 @@ function searchWikipedia(searchTerm, callback)
 
 function displayResults(responseText){
 	//cycle through each result and add it to the page
-    console.log(typeof(responseText))
+    document.getElementById("resultsList").innerHTML = "";
     responseText["1"].forEach(function(element,index) {
-        var wikiItem = document.createElement("LI");
-        wikiItem.className = "wikiResultItem";
+        var wikiItem = document.createElement("div");
         var itemUrl = document.createElement("a");
+        itemUrl.className = "wikiResultItem";
+        
         var itemDesc = document.createElement("p");
         itemDesc.innerHTML = responseText["2"][index].substring(0,200);
         itemUrl.innerHTML = element;
         itemUrl.href = responseText["3"][index];
         itemUrl.style.display = "block";
         itemUrl.style.width = "100%";
-        itemUrl.style.height = "100%";
-        wikiItem.appendChild(itemUrl);
-        wikiItem.appendChild(itemDesc);
-        resultsList.appendChild(wikiItem)
+        itemUrl.style.textDecoration = "none";
+        itemUrl.style.borderLeftColor = "orangered";
+        itemUrl.style.borderLeftStyle = "solid";
+        itemUrl.style.borderLeftWidth = "3px";
+        itemUrl.appendChild(wikiItem);
+        itemUrl.appendChild(itemDesc);
+        resultsList.appendChild(itemUrl)
         //Build new element ul
         //add title [1]
         //add some description [2]
         //add url to article [3]
     }, this);
+    //Now that everything is there 
+    $('#resultsList').animate({'margin-top': '0px'}, 1000);
 }
 
 

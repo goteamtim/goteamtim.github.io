@@ -153,11 +153,31 @@ h1, h2 {
 }
 
 .wikiResultItem{
-  width: 85%;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   margin: 5px;
   list-style: none;
+    text-decoration: none;
+}
+
+#resultsList{
+  margin-top:700px;
+}
+.wikiResultItem a:link {
+    text-decoration: none;
+    -webkit-text-fill-color:black;
+}
+
+.wikiResultItem:hover {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+    border-left-width: 9px;
+}
+
+a:hover .wikiResultItem {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+    border-left-width: 9px !important;
 }
 
 #weatherContent {
@@ -179,4 +199,8 @@ h1, h2 {
 
 .unitSelect {
   cursor: pointer;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
