@@ -143,13 +143,13 @@ h1, h2 {
 }
 
 .wiki-body {
-  background-color: royalblue;
+  background-color: #092B40;
 }
 
 #wiki-search-box {
   border-radius: 50px;
   border-color: orangered;
-  background-color: royalblue;
+  background-color: #092B40;
 }
 
 .wikiResultItem{
@@ -179,6 +179,19 @@ h1, h2 {
     -webkit-text-fill-color: black;
 }
 
+#wiki-random-article {
+  -moz-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.white-text {
+  -webkit-text-fill-color: white;
+}
+
+#top-row {
+  margin-top: 25%;
+}
+
 #weatherContent {
     font-size: 62px;
     color: white;
@@ -202,4 +215,36 @@ h1, h2 {
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+#magnifying-glass
+{
+     font-size: 6em; /*size icon here*/
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border: 0.04em solid red;
+    position: relative;
+    border-radius: 0.5em;
+}
+#magnifying-glass::before
+{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: red;
+ width: 0.35em;
+ height: 0.08em;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+
+#magnifying-glass.hideMe::before
+{
+ content: none;
 }

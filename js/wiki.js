@@ -2,7 +2,8 @@ var wikiApiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&prop=revi
     randomWikiArticle = 'https://en.wikipedia.org/wiki/Special:Random',
     form = document.getElementById("wiki-search-form"),
     searchBox = document.getElementById("wiki-search-box"),
-    resultsList = document.getElementById("resultsList");
+    resultsList = document.getElementById("resultsList"),
+    magGlass = document.getElementById("magnifying-glass");
 
 function searchWikipedia(searchTerm, callback)
 {
@@ -11,6 +12,7 @@ function searchWikipedia(searchTerm, callback)
 }
 
 function displayResults(responseText){
+    document.getElementById("top-row").style.marginTop = "5%";
 	//cycle through each result and add it to the page
     document.getElementById("resultsList").innerHTML = "";
     responseText["1"].forEach(function(element,index) {
@@ -47,3 +49,8 @@ form.addEventListener("submit",function(event){
     searchWikipedia(searchBox.value,displayResults);
     console.log("asdf");
 },false)
+
+magGlass.addEventListener('click',function(){
+    magGlass.style.width = "3em";
+    magGlass.className = "hideMe";
+})
