@@ -150,6 +150,16 @@ h1, h2 {
   border-radius: 50px;
   border-color: orangered;
   background-color: #092B40;
+  width: 18em;
+  display: none;
+  border-width: .26em;
+  margin-bottom: 4px;
+  border-style: solid;
+  height: 33px;
+}
+
+input:focus {
+  color: white;
 }
 
 .wikiResultItem{
@@ -223,9 +233,11 @@ textarea:focus, input:focus{
     display: inline-block;
     width: 0.4em;
     height: 0.4em;
-    border: 0.04em solid red;
+    border: 0.04em solid orangered;
     position: relative;
     border-radius: 0.5em;
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-duration: 2s;
 }
 #magnifying-glass::before
 {
@@ -235,9 +247,9 @@ textarea:focus, input:focus{
  right: -0.25em;
  bottom: -0.1em;
  border-width: 0;
- background: red;
- width: 0.35em;
- height: 0.08em;
+ background: orangered;
+ width: 0.34em;
+ height: 0.05em;
  -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
      -ms-transform: rotate(45deg);
@@ -247,4 +259,8 @@ textarea:focus, input:focus{
 #magnifying-glass.hideMe::before
 {
  content: none;
+}
+
+p.white-text {
+  margin-top: 15px;
 }

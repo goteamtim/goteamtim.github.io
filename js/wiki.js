@@ -52,5 +52,10 @@ form.addEventListener("submit",function(event){
 
 magGlass.addEventListener('click',function(){
     magGlass.style.width = "3em";
-    magGlass.className = "hideMe";
+    magGlass.className = "hideMe"; //Hide magnifying glass handle
+    setTimeout(function(){
+        magGlass.remove();
+        document.getElementById("wiki-search-box").style.display = "inline";
+        document.getElementById("wiki-search-box").focus();
+    },2000)
 })
