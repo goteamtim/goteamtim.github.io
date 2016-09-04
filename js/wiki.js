@@ -25,9 +25,9 @@ function displayResults(responseText){
         itemUrl.style.display = "block";
         itemUrl.style.width = "100%";
         itemUrl.style.textDecoration = "none";
-        itemUrl.style.borderLeftColor = "orangered";
-        itemUrl.style.borderLeftStyle = "solid";
-        itemUrl.style.borderLeftWidth = "3px";
+        //itemUrl.style.borderLeftColor = "orangered";
+        //itemUrl.style.borderLeftStyle = "solid";
+        //itemUrl.style.borderLeftWidth = "3px";
         itemUrl.appendChild(wikiItem);
         itemUrl.appendChild(itemDesc);
         resultsList.appendChild(itemUrl)

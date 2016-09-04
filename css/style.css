@@ -169,15 +169,14 @@ h1, h2 {
 }
 
 .wikiResultItem:hover {
-    text-decoration: none;
-    -webkit-text-fill-color: black;
-    border-left-width: 9px;
+    border-left-width: 5px;
+    border-left-color: orangered;
+    border-left-style: solid;
 }
 
-a:hover .wikiResultItem {
+.wikiResultItem {
     text-decoration: none;
     -webkit-text-fill-color: black;
-    border-left-width: 9px !important;
 }
 
 #weatherContent {
