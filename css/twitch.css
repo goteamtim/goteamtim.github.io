@@ -1,0 +1,20 @@
+body {
+    background-color: green;
+}
+
+.twitchStreamers {
+    border: 1px solid;
+    margin-top: 15%;
+}
+
+.online {
+    background-color: lightgreen green;
+}
+
+.offline {
+    background-color: indianred red;
+}
+
+li {
+    list-style: none;
+}
