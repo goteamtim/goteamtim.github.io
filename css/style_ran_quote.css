@@ -1,0 +1,32 @@
+#quote {
+	background-color: white;
+  opacity: 0.95;
+  min-height: 250px;
+
+  border-radius: 4px;
+  }
+
+  .fa-quote-right {
+  	vertical-align: bottom;
+
+  }
+
+.padding {
+	padding-top: 100px;
+}
+
+#getNewQuote {
+	position: absolute;
+	right: 10;
+	bottom:10;
+}
+
+#twitter {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.wrapper {
+	padding-bottom: 50px;
+}
