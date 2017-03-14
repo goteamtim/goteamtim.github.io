@@ -1,7 +1,7 @@
-var apiUrl = "https://api.twitch.tv/kraken/streams/",
+var apiUrl = " https://wind-bow.gomix.me/twitch-api",
   streamer = 'freecodecamp',
   streamerList = document.getElementById('twitchList'),
-  constStreamersList = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+  constStreamersList = ["clintstevens", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
 
 
@@ -10,7 +10,7 @@ constStreamersList.forEach(function (streamer) {
     var streamerDiv = document.createElement('li');
     if(data.stream === null){
       //User offline
-      //add 'offline class to li element
+      //add 'offline class to li element.  Check if a 400, that user might not exist anymore
       streamerDiv.className = 'offline';
       console.log('offline: ' + data);
       streamerDiv.innerHTML = streamer + ' is offline.';//Maybe take the user name and link to their profile.
