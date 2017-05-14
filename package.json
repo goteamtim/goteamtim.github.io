@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/goteamtim/goteamtim.github.io#readme",
   "dependencies": {
-    "bower": "^1.8.0"
+    "bower": "^1.8.0",
+    "gulp" :"3.9.1",
+    "express" :"4.15.2"
   }
 }
