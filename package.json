@@ -1,0 +1,23 @@
+{
+  "name": "timharshman.com",
+  "version": "1.0.0",
+  "description": "Source for timharshman.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goteamtim/goteamtim.github.io.git"
+  },
+  "author": "Tim Harshman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goteamtim/goteamtim.github.io/issues"
+  },
+  "homepage": "https://github.com/goteamtim/goteamtim.github.io#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "gulp": "^3.9.1"
+  }
+}
