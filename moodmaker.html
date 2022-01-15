@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body style="background-color:orange">
+    <input type="color" id="color_input" name="body" value="#f6b73c" hidden>
+
+    <script>
+        var body_element = document.querySelector('body');
+        var color_input = document.querySelector('#color_input');
+
+        color_input.addEventListener('input', function (e) {
+            body_element.style.backgroundColor = this.value;
+        });
+
+        window.addEventListener('click', (event) => {
+            color_input.focus()
+            color_input.click()
+        })
+    </script>
+</body>
+
+</html>
